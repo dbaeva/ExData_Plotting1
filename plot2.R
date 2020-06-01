@@ -20,7 +20,7 @@ plotData<-allData[as.Date(allData$Date, "%d/%m/%Y")>=as.Date('01/02/2007', "%d/%
 
 #starting png2
 #opening a file
-png(file="plot2.png",width=450,height=450)
+png(file="plot2.png",width=480,height=480)
 #writing graph to it
 plot(strptime(paste(plotData$Date, plotData$Time), "%d/%m/%Y %H:%M:%S"),plotData$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 #closing conenction to file

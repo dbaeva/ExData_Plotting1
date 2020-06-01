@@ -18,6 +18,6 @@ head(allData)
 plotData<-allData[as.Date(allData$Date, "%d/%m/%Y")>=as.Date('01/02/2007', "%d/%m/%Y") & as.Date(allData$Date, "%d/%m/%Y") <= as.Date('02/02/2007',"%d/%m/%Y"),]
 
 #Save as PNG of Plot of Histogram
-png(file="plot1.png",width=450,height=450)
+png(file="plot1.png",width=480,height=480)
 hist(as.numeric(plotData$Global_active_power), main= 'Global Active Power' ,xlab= 'Global Active Power (kilowatts)' , xlim =c(0,6), col="red", breaks=12)
 dev.off()

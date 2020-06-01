@@ -12,7 +12,7 @@ if (!file.exists("household_power_consumption.txt")){
 allData<-read.table("household_power_consumption.txt",sep= ";", header=TRUE, na.strings="?")
 
 #png4
-png(file="plot4.png",width=450,height=450)
+png(file="plot4.png",width=480,height=480)
 attach(plotData)
 par(mfrow=c(2,2))
 plot(strptime(paste(plotData$Date, plotData$Time), "%d/%m/%Y %H:%M:%S"),plotData$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")

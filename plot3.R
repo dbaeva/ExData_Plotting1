@@ -17,7 +17,7 @@ plotData<-allData[as.Date(allData$Date, "%d/%m/%Y")>=as.Date('01/02/2007', "%d/%
 
 
 #ping3
-png(file="plot3.png",width=450,height=450)
+png(file="plot3.png",width=480,height=480)
 plot(strptime(paste(plotData$Date, plotData$Time), "%d/%m/%Y %H:%M:%S"),plotData$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="", col ="black")
 lines(strptime(paste(plotData$Date, plotData$Time), "%d/%m/%Y %H:%M:%S"), plotData$Sub_metering_2, col="red")
 lines(strptime(paste(plotData$Date, plotData$Time), "%d/%m/%Y %H:%M:%S"),plotData$Sub_metering_3, type="l", ylab="Energy sub metering", xlab="", col ="blue")
